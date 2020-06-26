@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import numpy as np
 import matplotlib.pyplot as plt
 import scipy
@@ -11,3 +12,9 @@ def main():
     return 0; 
 
 main()
+=======
+
+
+
+
+>>>>>>> dev
