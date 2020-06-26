@@ -106,7 +106,7 @@ def main():
 
 
     Theta = np.ones(2)
-    Landa = 1
+    Landa = 0
     fmin = minimize(fun=cost_and_gradient,x0=Theta,args=(X,y,Landa),method='TNC',jac=True)
     show_graph(X,y,fmin['x'])
 
@@ -131,6 +131,7 @@ def main():
     error_train, error_val = learning_curve(Theta_featurized,X_normalized,y,Xval_normalized,yval,0)
     show_learning_curve(error_train,error_val, len(X), name = 'Learning curve for polynomial hypotesis')
     # TODO lo que esta entre los todos no va del todo
+    
     Landas = [0, 0.001, 0.003, 0.01, 0.03, 0.1, 0.3, 1, 3, 10]
     errors_train = []
     errors_val = []
