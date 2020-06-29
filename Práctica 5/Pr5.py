@@ -63,7 +63,7 @@ def test_hypotesis(norm_X, Y, X_test, Y_test, Mu, Sigma, Landa, p):
 
     cost = cost_reg(fmin.x, norm_X_test, Y_test, Landa)
 
-    print("Con λ = {}, el coste de X_text es: {}".format(Landa, cost))
+    print("With λ = {}, cost for X_text is: {}".format(Landa, cost))
 
 def linear_regression_graph(X, Y, Theta, name):
     plt.figure()

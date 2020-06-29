@@ -147,6 +147,7 @@ def make_data(route, start, end):
     '''
     for i in range(start,end): 
         name = route + "0{}.txt".format(i) # los ceros me tocan la polla
+        
         email_contents = cod.open(name , 'r' , encoding='utf8' , errors= 'ignore').read()
         email_words = email2TokenList(email_contents)
 
