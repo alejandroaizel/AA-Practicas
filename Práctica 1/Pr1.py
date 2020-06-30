@@ -175,7 +175,7 @@ def mult_var_regression():
 
 
 def main():
-    one_var_regression()
+    #one_var_regression()
     mult_var_regression()
 
 
