@@ -81,7 +81,7 @@ def main():
 
     X = np.hstack([np.ones([len(X), 1]), X])
     
-    multi_class(X, y)
+    #multi_class(X, y)
     neural_network(X, y)
 
 
